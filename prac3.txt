@@ -193,24 +193,15 @@ int main()
     return 0;
 }
 */
-Definition:
-A tree T is a set of nodes storing elements such that the nodes have a parent-child relationship that
-satisfies the following
-• if T is not empty, T has a special tree called the root that has no parent
-• each node v of T different than the root has a unique parent node w; each node with parent w is a child of
-tree.
-A node that has no child is called a leaf, and that node is of course at the bottommost level of the tree. The
-height of a node is the length of the longest path to a leaf from that node. The height of the root is the
-height of the tree. In other words, the "height" of tree is the "number of levels" in the tree. Or more
-formally, the height of a tree is defined as follows:
-1. The height of a tree with no elements is 0
-2. The height of a tree with 1 element is 1
-3. The height of a tree with > 1 element is equal to 1 + the height of its tallest subtree.
-The depth of a node is the length of the path to its root (i.e., its root path). Every child node is always one
-level lower than his parent. The topmost node in a tree is called the root node. Being the topmost node, the
-root node will not have parents. It is the node at which operations on the tree commonly begin (although
-some algorithms begin with the leaf nodes and work up ending at the root). All other nodes can be reached
-from it by following edges or links. (In the formal definition, a path from a root to a node, for each
-different node is always unique). In diagrams, it is typically drawn at the top.
-/*
-
+1) Start
+2) Accept book name and create node to save book name
+3) Accept number of chapters
+4) Accept chapter name and count of sections in the chapter, create node, save details and attach the node as child of book node
+5) Accept section title and count of subsections, create node, save details and attach the node as child of chapter node
+6) Accept sub-section title, create node, save details and attach the node as child of section node
+7) Check whether all subsections are covered
+8) Check whether all sections are covered
+9) Check whether all chapters are covered
+10) Display the tree
+11) End
+*/
